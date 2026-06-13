@@ -1,31 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap');
+    body {
+      background-color: hsl(257, 40%, 49%);
+      background-image: url(images/bg-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    #logo {
+      margin-top: 50px;
+      margin-left: 50px;
+      width: 200px;
+      height: auto;
+    }
+
+    #container {
+      margin-top: 80px;
+      display: flex;
+      align-items: flex-start;
+      gap: 60px;
+      padding: 0 50px;
+    }
+
+    #illustration {
+      flex: 1;
+    }
+
+    #illustration img {
+      width: 100%;
+      height: auto;
+    }
+
+    #text {
+      flex: 1;
+      color: white;
+    }
+    #text h1{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+    #text p{
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 25px;
+    }
+    .btn{
+      border: none;
+      border-radius: 30px;
+      padding: 10px 40px;
+      background-color: white;
+      color: hsl(257, 40%, 49%);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn:hover{
+      background-color: hsl(300, 69%, 71%);
+      color: white;
+    }
+    .footer{
+      justify-content: flex-end;
+      display: flex;
+      gap: 15px;
+      padding: 30px 50px;
+    }
+    .footer a{
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer a:hover{
+      border-color: hsl(300, 69%, 71%);
+      color: hsl(300, 69%, 71%);
+    }
+    @media(max-width:768px){
+      
+    }
   </style>
 </head>
+
 <body>
 
-  Build The Community Your Fans Will Love
+  <!-- NavBar -->
+  <Nav>
+    <div class="icon">
+      <img src="images\logo.svg" alt="" id="logo" width="200px" height="200px">
+    </div>
+  </Nav>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+  <!--Hero Section  -->
 
-  Register
+  <section id="container">
+    <div id="illustration">
+      <img src="images\illustration-mockups.svg" alt="" width="400px" height="auto">
+    </div>
+    <div id="text">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p>Huddles re-imagines the way we build communities. You have a voice, but so does your audience. Create
+        connections with your users as you engage in genuine dicussion.
+      </p>
+        <button class="btn">Register</button>
+    </div>
+  </section>
 
-      <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </footer>
+  <!-- Footer -->
+   <footer class="footer">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+   </footer>
+
 </body>
+
 </html>
