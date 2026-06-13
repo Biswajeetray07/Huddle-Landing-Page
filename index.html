@@ -96,7 +96,27 @@
       color: hsl(300, 69%, 71%);
     }
     @media(max-width:768px){
-      
+      #container{
+        flex-direction: column;
+        padding: 0 25px;
+        align-items: center;
+      }
+      body{
+        background-image: url(images/bg-mobile.svg);
+      }
+      #logo{
+        margin-left: 20px;
+        margin-top: 30px;
+      }
+      #text{
+        text-align: center;
+      }
+      #text h1{
+        font-size: 28px;
+      }
+      .footer{
+        justify-content: center;
+      }
     }
   </style>
 </head>
@@ -104,17 +124,17 @@
 <body>
 
   <!-- NavBar -->
-  <Nav>
+  <nav>
     <div class="icon">
-      <img src="images\logo.svg" alt="" id="logo" width="200px" height="200px">
+      <img src="images/logo.svg" alt="" id="logo" width="200px" height="200px">
     </div>
-  </Nav>
+  </nav>
 
   <!--Hero Section  -->
 
   <section id="container">
     <div id="illustration">
-      <img src="images\illustration-mockups.svg" alt="" width="400px" height="auto">
+      <img src="images/illustration-mockups.svg" alt="" width="400px" height="auto">
     </div>
     <div id="text">
       <h1>Build The Community Your Fans Will Love</h1>
